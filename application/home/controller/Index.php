@@ -2,8 +2,21 @@
 namespace app\home\controller;
 use think\Controller;
 class Index{
-	public function index()
+	private $redis = null;
+	public function setval()
 	{
-		echo 'hello';
+
+		$this->redis->set('name','cch');
+
+	}
+	public function getval()
+	{
+		var_dump($this->redis->get('name'));
+	}
+
+	public function __init__()
+	{
+		$this->redis = new \Redis;
+		$this->redis->connect('127.0.0.1','6379');
 	}
 }
