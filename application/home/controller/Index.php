@@ -4,6 +4,6 @@ use think\Controller;
 class Index{
 	public function index()
 	{
-		echo 'ha';
+		echo 'hello';
 	}
 }
