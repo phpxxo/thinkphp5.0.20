@@ -27,8 +27,9 @@
     },
     "autoload": {
         "psr-4": {
-            "app\\": "application"
-        }
+            "app\\": "application",
+        },
+
     },
     "extra": {
         "think-path": "thinkphp"
