@@ -31,6 +31,10 @@ class ComposerStaticInit34a41e2841af1a67f3ddef099fc7b348
         array (
             'Phinx\\' => 6,
         ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Cache\\' => 22,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -68,7 +72,10 @@ class ComposerStaticInit34a41e2841af1a67f3ddef099fc7b348
         array (
             0 => __DIR__ . '/..' . '/topthink/think-migration/phinx/src/Phinx',
         ),
-    
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
